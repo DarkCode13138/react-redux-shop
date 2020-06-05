@@ -1,7 +1,9 @@
 import {combineReducers} from "redux";
 import books from "./books";
-
-export default () =>
-    combineReducers({
+import cart from "./cart";
+import filter from "./filter";
+export default combineReducers({
     books,
+    cart,
+    filter
 });
